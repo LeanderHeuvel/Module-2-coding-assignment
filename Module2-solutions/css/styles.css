@@ -1,20 +1,77 @@
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
 .block {
     border-style: solid;
     border-width: 2px;
     border-color: black;
-    float: left;
-    margin: 3px;
-    width: 30%;
     background-color: grey;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+h1{
+    text-align: center;
+    font-size: 1.75em;
 }
 .section-title {
+    font-size: 1.25em;
     font-weight: bold;
     background-color: pink;
     position: relative;
-    left:0;
+    right:-12px;
+    top:-2px;   
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
     border-color: black;
-    width:auto;
+    width: 30%;
+    margin-left: auto;
+    text-align: center;
+}
+.col-md {
+    float: left;
+    padding: 5px;
+}
+.col-md {
+    width: 33%;
 }
 
+.row{   
+    width: 100%;
+}
+/*** DesktoHAns  view **/
+@media (min-width: 992px){
+    
+}
+#Chicken {
+    background-color: pink;
+    color: black;
+}
+#Beef {
+    background-color: red;
+    color: white;
+}
+#Sushi {
+    background-color: yellow;
+    color: black;
+}
+/*** Desktop is default view **/
+
+/*** Tablet view **/
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md{
+        width: 50%;
+    }
+    .col-bottom {
+        width: 100%;
+    }
+}
+/*** Mobile view **/
+@media  (max-width: 767px) {
+    .col-md{
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
